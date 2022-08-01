@@ -1,4 +1,4 @@
-﻿namespace DietCallories.DTO
+﻿namespace CalorieCalculator.DTO
 {
     public class ProductControl
     {

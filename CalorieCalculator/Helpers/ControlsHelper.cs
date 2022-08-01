@@ -1,9 +1,9 @@
-﻿using DietCallories.DTO;
+﻿using CalorieCalculator.DTO;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace DietCallories.Helpers
+namespace CalorieCalculator.Helpers
 {
     public class ControlsHelper
     {

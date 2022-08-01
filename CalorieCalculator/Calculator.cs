@@ -1,13 +1,13 @@
-﻿using DietCallories.DTO;
-using DietCallories.Helpers;
-using DietCallories.POCO;
+﻿using CalorieCalculator.DTO;
+using CalorieCalculator.Helpers;
+using CalorieCalculator.POCO;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace DietCallories
+namespace CalorieCalculator
 {
     public partial class Calculator : Form
     {

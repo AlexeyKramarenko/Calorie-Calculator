@@ -1,10 +1,10 @@
-﻿using DietCallories.DTO;
+﻿using CalorieCalculator.DTO;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace DietCallories.Helpers
+namespace CalorieCalculator.Helpers
 {
     public static class JsonHelper
     {

@@ -1,8 +1,8 @@
-﻿using DietCallories.DTO;
+﻿using CalorieCalculator.DTO;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DietCallories.POCO
+namespace CalorieCalculator.POCO
 {
     public class ProductControlLists
     {

@@ -1,4 +1,4 @@
-﻿namespace DietCallories
+﻿namespace CalorieCalculator
 {
     partial class Calculator
     {

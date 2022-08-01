@@ -1,8 +1,8 @@
-﻿using DietCallories.DTO;
+﻿using CalorieCalculator.DTO;
 using System;
 using System.Collections.Generic;
 
-namespace DietCallories.POCO
+namespace CalorieCalculator.POCO
 {
     public class ProductModel
     {

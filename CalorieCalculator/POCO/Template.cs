@@ -1,9 +1,9 @@
-﻿using DietCallories.DTO;
-using DietCallories.Extensions;
+﻿using CalorieCalculator.DTO;
+using CalorieCalculator.Extensions;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DietCallories.POCO
+namespace CalorieCalculator.POCO
 {
     public class Template
     {

@@ -1,11 +1,11 @@
-﻿using DietCallories.DTO;
+﻿using CalorieCalculator.DTO;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DietCallories.Extensions
+namespace CalorieCalculator.Extensions
 {
-    internal static class StringBuilderlExtensions
+    public static class StringBuilderlExtensions
     {
         public static StringBuilder Append(this StringBuilder sb, string str)
         {

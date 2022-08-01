@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 
-namespace DietCallories.POCO
+namespace CalorieCalculator.POCO
 {
     public class ResultDocument
     {
