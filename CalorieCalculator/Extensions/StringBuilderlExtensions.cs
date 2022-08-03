@@ -1,4 +1,5 @@
 ﻿using CalorieCalculator.DTO;
+using CalorieCalculator.Extensions.Functional;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,6 +8,7 @@ namespace CalorieCalculator.Extensions
 {
     public static class StringBuilderlExtensions
     {
+
         public static StringBuilder Append(this StringBuilder sb, string str)
         {
             sb.Append(str);
@@ -23,14 +25,15 @@ namespace CalorieCalculator.Extensions
                                     this StringBuilder sb,
                                          IEnumerable<ProductRecord> records,
                                          Func<ProductRecord, string> func)
-        { 
-            foreach (ProductRecord record in records)
+        {
+            records.ForEach(record =>
             {
                 sb.Append(func(record));
                 sb.AppendLine();
-            }
+            });
 
             return sb;
         }
+
     }
 }

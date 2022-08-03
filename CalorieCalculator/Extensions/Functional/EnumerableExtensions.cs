@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CalorieCalculator.Extensions
+namespace CalorieCalculator.Extensions.Functional
 {
     public static class EnumerableExtensions
     {
+
         public static void ForEach<T>(this IEnumerable<T> enumeration, Action<T> action)
         {
             foreach (T item in enumeration)
             {
                 action(item);
+            }
+        }
+
+        public static void ForEach<A, B>(this IEnumerable<A> enumeration, Func<A, B> func)
+        {
+            foreach (A item in enumeration)
+            {
+                func(item);
             }
         }
 
@@ -31,6 +40,7 @@ namespace CalorieCalculator.Extensions
             sequence.Where(predicate)
                     .Select<T, Option<T>>(x => x)
                     .DefaultIfEmpty(None.Value)
-                    .First(); 
+                    .First();
+
     }
 }

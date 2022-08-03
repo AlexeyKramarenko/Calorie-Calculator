@@ -1,9 +1,10 @@
 ﻿using System;
 
-namespace CalorieCalculator.Extensions
+namespace CalorieCalculator.Extensions.Functional
 {
     public static class Extensions
-    { 
+    {
+
         private static bool OnConditionExecute(Action doSomething)
         {
             doSomething();
@@ -27,5 +28,6 @@ namespace CalorieCalculator.Extensions
                 action(item);
             }
         }
+
     }
 }

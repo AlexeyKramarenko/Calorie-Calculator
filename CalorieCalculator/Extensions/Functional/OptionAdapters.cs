@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CalorieCalculator.Extensions
+namespace CalorieCalculator.Extensions.Functional
 {
     public static class OptionAdapters
     {

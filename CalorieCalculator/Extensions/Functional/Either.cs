@@ -1,4 +1,4 @@
-﻿namespace CalorieCalculator.Extensions
+﻿namespace CalorieCalculator.Extensions.Functional
 {
     public abstract class Either<TLeft, TRight>
     {
@@ -15,7 +15,7 @@
 
         public Left(TLeft content)
         {
-            this.Content = content;
+            Content = content;
         }
 
         public static implicit operator TLeft(Left<TLeft, TRight> obj) =>
@@ -28,7 +28,7 @@
 
         public Right(TRight content)
         {
-            this.Content = content;
+            Content = content;
         }
 
         public static implicit operator TRight(Right<TLeft, TRight> obj) =>
