@@ -27,19 +27,18 @@ namespace CalorieCalculator.POCO
                  .Append(End)
                  .ToString();
 
-        private string End
-        {
-            get => $@" 
+
+        private string End =>
+                 $@" 
                     Proteins: {_calculationSummary.ProteinsResult}g
                     Fats: {_calculationSummary.FatResult}g
                     Сarbohydrates: {_calculationSummary.СarbohydratesResult}g 
                     Kcal: {_calculationSummary.Kcal}";
-        }
 
-        private IEnumerable<ProductRecord> NonZeroAmountRecords
-        {
-            get => _records.Where(r => r.ProductAmount != 0);
-        }
+
+
+        private IEnumerable<ProductRecord> NonZeroAmountRecords =>
+            _records.Where(r => r.ProductAmount != 0);
 
     }
 }

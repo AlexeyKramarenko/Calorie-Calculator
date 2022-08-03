@@ -94,7 +94,7 @@ namespace CalorieCalculator
         {
             var ctls = ProductControlLists.Create(products);
             int heightControlInterval = 40;
-            AddControls(ctls.Fat, fatPnl, heightControlInterval);
+            AddControls(ctls.Fats, fatPnl, heightControlInterval);
             AddControls(ctls.Proteins, proteinsPnl, heightControlInterval);
             AddControls(ctls.Carbohydrates, carbohydratesPnl, heightControlInterval);
         }
