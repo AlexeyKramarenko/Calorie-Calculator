@@ -1,0 +1,411 @@
+{
+	"products": [
+		{
+			"name": "Творог 0,2%",
+			"protein": 18,
+			"fat": 0.2,
+			"carbohydrates": 1.8,
+			"calcium": 0.12
+		},
+		{
+			"name": "Яйца",
+			"protein": 12.8,
+			"fat": 11.6,
+			"carbohydrates": 0.7,
+			"calcium": 0.11
+		},
+		{
+			"name": "Яйчный белок вареный",
+			"protein": 11.84,
+			"fat": 0.16,
+			"carbohydrates": 0.17
+		},
+		{
+			"name": "Куриное филе",
+			"protein": 23.75,
+			"fat": 2.74,
+			"carbohydrates": 0.54,
+			"calcium": 0.01
+		},
+		{
+			"name": "Сьомга",
+			"protein": 21.98,
+			"fat": 14.28,
+			"carbohydrates": 0.27
+		},
+		{
+			"name": "Черный хлеб бездрожевой",
+			"protein": 5.77,
+			"fat": 0.51,
+			"carbohydrates": 37.54
+		},
+		{
+			"name": "Кефир 2,5%",
+			"protein": 2.8,
+			"fat": 2.5,
+			"carbohydrates": 4.0
+		},
+		{
+			"name": "Сгущенка Рогачев",
+			"protein": 7.2,
+			"fat": 8.5,
+			"carbohydrates": 56.0
+		},
+		{
+			"name": "Сметана 20%",
+			"protein": 2.81,
+			"fat": 19.77,
+			"carbohydrates": 3.79
+		},
+		{
+			"name": "Масло сливочное 82,5%",
+			"protein": 0.54,
+			"fat": 82.48,
+			"carbohydrates": 0.78
+		},
+		{
+			"name": "Гречка Сухая",
+			"protein": 12.6,
+			"fat": 3.3,
+			"carbohydrates": 62.1,
+			"calcium": 0.021
+		},
+		{
+			"name": "Хлебцы рисовые",
+			"protein": 8.6,
+			"fat": 3.2,
+			"carbohydrates": 82
+		},
+		{
+			"name": "Яблоки",
+			"protein": 0.4,
+			"fat": 0.4,
+			"carbohydrates": 9.8,
+			"calcium": 0.007
+		},
+		{
+			"name": "Банан",
+			"protein": 1.5,
+			"fat": 0.5,
+			"carbohydrates": 21
+		},
+		{
+			"name": "Мед имбирь",
+			"protein": 0.8,
+			"fat": 0,
+			"carbohydrates": 74
+		},
+		{
+			"name": "Мед",
+			"protein": 0.8,
+			"fat": 0,
+			"carbohydrates": 80
+		},
+		{
+			"name": "Nutella",
+			"protein": 6.3,
+			"fat": 30.9,
+			"carbohydrates": 57.5
+		},
+		{
+			"name": "Молоко 1,5%",
+			"protein": 2.9,
+			"fat": 2.5,
+			"carbohydrates": 4.8,
+			"calcium": 0
+		},
+		{
+			"name": "Орех Грецкий",
+			"protein": 16.2,
+			"fat": 60.8,
+			"carbohydrates": 11.1
+		},
+		{
+			"name": "Шоколад Millenium 74%",
+			"protein": 9.6,
+			"fat": 41.4,
+			"carbohydrates": 36.8
+		},
+		{
+			"name": "Шоколад Millenium 80%",
+			"protein": 10.1,
+			"fat": 45.4,
+			"carbohydrates": 31.1
+		},
+		{
+			"name": "Оливковое масло",
+			"protein": 0,
+			"fat": 93.86,
+			"carbohydrates": 0.44
+		},
+		{
+			"name": "Льняное масло",
+			"protein": 0.54,
+			"fat": 95.28,
+			"carbohydrates": 0.42
+		},
+		{
+			"name": "Сметана 15%",
+			"protein": 2.6,
+			"fat": 15,
+			"carbohydrates": 3.6
+		},
+		{
+			"name": "Сметана 10%",
+			"protein": 3.0,
+			"fat": 10,
+			"carbohydrates": 2.9,
+			"calcium": 0.080
+		},
+		{
+			"name": "Мармелад 'Лимонные дольки'",
+			"protein": 0.1,
+			"fat": 0.1,
+			"carbohydrates": 82.6
+		},
+		{
+			"name": "Помидор",
+			"protein": 1.1,
+			"fat": 0.2,
+			"carbohydrates": 3.8,
+			"calcium": 0.014
+		},
+		{
+			"name": "Огурцы",
+			"protein": 0.8,
+			"fat": 0.1,
+			"carbohydrates": 2.5,
+			"calcium": 0.015
+		},
+		{
+			"name": "Зефир Белый",
+			"protein": 0.8,
+			"fat": 0.1,
+			"carbohydrates": 79.8
+		},
+		{
+			"name": "Cachet Dark",
+			"protein": 6.2,
+			"fat": 32.1,
+			"carbohydrates": 46.3,
+			"calcium": 0
+		},
+		{
+			"name": "Actimel",
+			"protein": 2.8,
+			"fat": 1.5,
+			"carbohydrates": 12.1,
+			"calcium": 0
+		},
+		{
+			"name": "Kinder Pingui Шоколад",
+			"protein": 7,
+			"fat": 29.7,
+			"carbohydrates": 37.8,
+			"calcium": 0
+		},
+		{
+			"name": "Твердый Сыр Голландский",
+			"protein": 26.3,
+			"fat": 26.6,
+			"carbohydrates": 0,
+			"calcium": 1
+		},
+		{
+			"name": "Апельсин",
+			"protein": 0.9,
+			"fat": 0.2,
+			"carbohydrates": 8.1,
+			"calcium": 0
+		},
+		{
+			"name": "Пряник",
+			"protein": 5,
+			"fat": 5,
+			"carbohydrates": 75,
+			"calcium": 0
+		},
+		{
+			"name": "Шоколад Torras Negro Nibbs de Cacao",
+			"protein": 6,
+			"fat": 34,
+			"carbohydrates": 46,
+			"calcium": 0
+		},
+		{
+			"name": "Халва діабетична",
+			"protein": 12,
+			"fat": 31,
+			"carbohydrates": 43,
+			"calcium": 0
+		},
+		{
+			"name": "Помело",
+			"protein": 0.76,
+			"fat": 0.04,
+			"carbohydrates": 8.62,
+			"calcium": 0
+		},
+		{
+			"name": "Овсянка",
+			"protein": 10,
+			"fat": 6,
+			"carbohydrates": 68,
+			"calcium": 0
+		},
+		{
+			"name": "Бородинский хлеб",
+			"protein": 6.52,
+			"fat": 1.35,
+			"carbohydrates": 45,
+			"calcium": 0
+		},
+		{
+			"name": "Арахисовая паста",
+			"protein": 26,
+			"fat": 52,
+			"carbohydrates": 13.4,
+			"calcium": 0
+		},
+		{
+			"name": "Изюм",
+			"protein": 2.9,
+			"fat": 0.6,
+			"carbohydrates": 66,
+			"calcium": 0
+		},
+		{
+			"name": "Курага",
+			"protein": 5.2,
+			"fat": 0.3,
+			"carbohydrates": 51,
+			"calcium": 0
+		},
+		{
+			"name": "Чернослив",
+			"protein": 2.3,
+			 "fat": 0.7,
+			"carbohydrates": 57.5,
+			"calcium": 0
+		},
+		{
+			"name": "Cдобная булка",
+			"protein": 7.9,
+			"fat": 9.4,
+			"carbohydrates": 55.5,
+			"calcium": 0
+		},
+		{
+			"name": "Сушеная тайская дыня",
+			"protein": 0.6,
+			"fat": 0.3,
+			"carbohydrates": 80,
+			"calcium": 0
+		},
+		{
+			"name": "Немецкий мармелад",
+			"protein": 0.5,
+			"fat": 0.5,
+			"carbohydrates": 85,
+			"calcium": 0
+		} ,
+		{
+			"name": "Snickers",
+			"protein": 7,
+			"fat": 24,
+			"carbohydrates": 63,
+			"calcium": 0
+		} ,
+		{
+			"name": "Chocolat NOIR 70%",
+			"protein": 8.3,
+			"fat": 44.7,
+			"carbohydrates": 44.2,
+			"calcium": 0
+		} ,
+		{
+			"name": "Перец болгарский",
+			"protein": 1.43,
+			"fat": 0.17,
+			"carbohydrates": 5.54,
+			"calcium": 0
+		} ,
+		{
+			"name": "Йогурт 1.5%",
+			"protein": 4.1,
+			"fat": 1.5,
+			"carbohydrates": 5.9,
+			"calcium": 0
+		},
+		{
+			"name": "Черный рис",
+			"protein": 8,
+			"fat": 0.75,
+			"carbohydrates": 80,
+			"calcium": 0
+		},
+		{
+			"name": "Макароны",
+			"protein": 10.6,
+			"fat": 1.05,
+			"carbohydrates": 65.58,
+			"calcium": 0
+		},
+		{
+			"name": "Фундук",
+			"protein": 14.95,
+			"fat": 60.75,
+			"carbohydrates": 7,
+			"calcium": 0
+		},
+		{
+			"name": "Груша сушеная",
+			"protein": 2.3,
+			"fat": 0.6,
+			"carbohydrates": 62.6,
+			"calcium": 0
+		} ,
+		{
+			"name": "Мигдаль",
+			"protein": 18.6,
+			"fat": 53.7,
+			"carbohydrates": 13,
+			"calcium": 0
+		} ,
+		{
+			"name": "Ківі",
+			"protein": 1,
+			"fat": 0.6,
+			"carbohydrates": 10.3,
+			"calcium": 0
+		} ,
+		{
+			"name": "Кеш'ю",
+			"protein": 18.5,
+			"fat": 48.5,
+			"carbohydrates": 13.2,
+			"calcium": 0
+		} ,
+		{
+			"name": "Апельсин сок",
+			"protein": 0.7,
+			"fat": 0.2,
+			"carbohydrates": 10.4,
+			"calcium": 0
+		} ,
+		{
+			"name": "Еклер французький",
+			"protein": 6.4,
+			"fat": 10,
+			"carbohydrates": 35.1,
+			"calcium": 0
+		}  ,
+		{
+			"name": "Торт Вафельний",
+			"protein": 6.5,
+			"fat": 21.4,
+			"carbohydrates": 46.7,
+			"calcium": 0
+		} 
+	]
+}
