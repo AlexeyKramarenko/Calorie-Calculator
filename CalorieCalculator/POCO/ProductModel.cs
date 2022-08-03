@@ -10,11 +10,11 @@ namespace CalorieCalculator.POCO
     {
         #region State
 
-        private float _proteins { get; set; }
-        private float _fat { get; set; }
-        private float _carbohydrates { get; set; }
-        private float _kcal { get; set; }
-        private float _calcium { get; set; }
+        private float _proteins;
+        private float _fat;
+        private float _carbohydrates;
+        private float _kcal;
+        private float _calcium;
         
         #endregion
 
