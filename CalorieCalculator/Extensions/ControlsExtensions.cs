@@ -26,6 +26,13 @@ namespace CalorieCalculator.Extensions
         }
 
 
+        public static bool InputHasWrongCharacters(this IEnumerable<Panel> panels) =>
+            panels
+                .SelectMany(p => p.Controls.OfType<TextBox>())
+                .Where(txt => txt.Text.Trim() != string.Empty)
+                .Any(textBox => !int.TryParse(textBox.Text, out int _));
+
+
         public static IEnumerable<ProductRecord> ExtractDefinedProductsWithAmount(this IEnumerable<Panel> panels) =>
             panels
                .Select(pnl => pnl.Controls)

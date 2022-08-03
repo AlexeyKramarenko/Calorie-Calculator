@@ -45,7 +45,6 @@
             this.lbPFC = new System.Windows.Forms.Label();
             this.lbCalcium = new System.Windows.Forms.Label();
             this.selectedOnlyBtn = new System.Windows.Forms.Button();
-            this.allProductsBtn = new System.Windows.Forms.Button();
             this.clearBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -195,19 +194,9 @@
             this.selectedOnlyBtn.Name = "selectedOnlyBtn";
             this.selectedOnlyBtn.Size = new System.Drawing.Size(128, 38);
             this.selectedOnlyBtn.TabIndex = 12;
-            this.selectedOnlyBtn.Text = "Only &Selected";
+            this.selectedOnlyBtn.Text = "Selected Only";
             this.selectedOnlyBtn.UseVisualStyleBackColor = true;
             this.selectedOnlyBtn.Click += new System.EventHandler(this.selectedOnlyBtn_Click);
-            // 
-            // allProductsBtn
-            // 
-            this.allProductsBtn.Location = new System.Drawing.Point(53, 18);
-            this.allProductsBtn.Name = "allProductsBtn";
-            this.allProductsBtn.Size = new System.Drawing.Size(96, 36);
-            this.allProductsBtn.TabIndex = 13;
-            this.allProductsBtn.Text = "&All";
-            this.allProductsBtn.UseVisualStyleBackColor = true;
-            this.allProductsBtn.Click += new System.EventHandler(this.allProductsBtn_Click);
             // 
             // clearBtn
             // 
@@ -221,9 +210,9 @@
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(53, 75);
+            this.saveBtn.Location = new System.Drawing.Point(66, 16);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(96, 29);
+            this.saveBtn.Size = new System.Drawing.Size(96, 38);
             this.saveBtn.TabIndex = 15;
             this.saveBtn.Text = "Sa&ve";
             this.saveBtn.UseVisualStyleBackColor = true;
@@ -236,7 +225,6 @@
             this.ClientSize = new System.Drawing.Size(1065, 827);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.clearBtn);
-            this.Controls.Add(this.allProductsBtn);
             this.Controls.Add(this.selectedOnlyBtn);
             this.Controls.Add(this.lbCalcium);
             this.Controls.Add(this.lbPFC);
@@ -281,7 +269,6 @@
         private System.Windows.Forms.Label lbPFC;
         private System.Windows.Forms.Label lbCalcium;
         private System.Windows.Forms.Button selectedOnlyBtn;
-        private System.Windows.Forms.Button allProductsBtn;
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Button saveBtn;
     }
