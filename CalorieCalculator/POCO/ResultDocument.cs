@@ -6,6 +6,7 @@ namespace CalorieCalculator.POCO
 {
     public class ResultDocument
     {
+
         public readonly string _folderPath;
         public readonly string _documentName;
 

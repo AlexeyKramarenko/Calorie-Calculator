@@ -1,41 +1,52 @@
 ﻿using CalorieCalculator.DTO;
+using CalorieCalculator.Extensions;
+using CalorieCalculator.Extensions.Functional;
 using System;
 using System.Collections.Generic;
 
 namespace CalorieCalculator.POCO
 {
-    public class ProductModel
+    public class ProductModel 
     {
-        public double Proteins { get => Math.Round(_proteins); }
-        public double Fats { get => Math.Round(_fat); }
-        public double Carbohydrates { get => Math.Round(_carbohydrates); }
-        public double Kcal { get => Math.Round(_kcal); }
-        public double Calcium { get => Math.Round(_calcium, 2); }
+        #region State
 
         private float _proteins { get; set; }
         private float _fat { get; set; }
         private float _carbohydrates { get; set; }
         private float _kcal { get; set; }
         private float _calcium { get; set; }
+        
+        #endregion
 
         private ProductModel() { }
 
-        public static ProductModel Create(List<(Product, float)> list) =>
-            new ProductModel().Append(list);
+        public static ProductModel Create(IEnumerable<ProductAmount> productAmounts) =>
+            new ProductModel().Append(productAmounts);
 
-        public ProductModel Append(List<(Product, float)> list)
+        public double Proteins { get => Math.Round(_proteins); }
+        public double Fats { get => Math.Round(_fat); }
+        public double Carbohydrates { get => Math.Round(_carbohydrates); }
+        public double Kcal { get => Math.Round(_kcal); }
+        public double Calcium { get => Math.Round(_calcium, 2); }
+
+        public override string ToString() =>
+           $"Proteins: {ProteinsKcalPercentage()} % {Environment.NewLine}Fats: {FatsKcalPercentage()} % {Environment.NewLine}Carbohydrates: {CarbohydratesKcalPercentage()} %";
+
+        #region Private Methods
+        
+        private ProductModel Append(IEnumerable<ProductAmount> productAmounts)
         {
-            list.ForEach(a => Append(a.Item1, a.Item2));
+            productAmounts.ForEach(a => Append(a.Product, a.Amount));
             return this;
         }
 
-        private void Append(Product product, float selectedValue)
+        private void Append(Product product, float amount)
         {
-            _proteins += product.Protein * selectedValue / 100;
-            _fat += product.Fat * selectedValue / 100;
-            _carbohydrates += product.Carbohydrates * selectedValue / 100;
-            _kcal += product.Kcal * selectedValue / 100;
-            _calcium += product.Calcium * selectedValue / 100;
+            _proteins += product.Protein * amount / 100;
+            _fat += product.Fat * amount / 100;
+            _carbohydrates += product.Carbohydrates * amount / 100;
+            _kcal += product.Kcal * amount / 100;
+            _calcium += product.Calcium * amount / 100;
         }
 
         private double ProteinsKcalPercentage() =>
@@ -46,8 +57,8 @@ namespace CalorieCalculator.POCO
 
         private double CarbohydratesKcalPercentage() =>
             Math.Floor(100 / _kcal * _carbohydrates * 4);
+        
+        #endregion
 
-        public string PFC() =>
-            $"Proteins: {ProteinsKcalPercentage()} % {Environment.NewLine}Fats: {FatsKcalPercentage()} % {Environment.NewLine}Carbohydrates: {CarbohydratesKcalPercentage()} %";
     }
 }

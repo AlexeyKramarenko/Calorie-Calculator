@@ -6,6 +6,7 @@ namespace CalorieCalculator.POCO
 {
     public class ProductControlLists
     {
+
         private readonly IEnumerable<ProductControl> products;
 
         private ProductControlLists(IEnumerable<ProductControl> products)
@@ -41,5 +42,6 @@ namespace CalorieCalculator.POCO
                 .Except(Carbohydrates)
                 .OrderByDescending(p => p.Product.Fat);
         }
+
     }
 }

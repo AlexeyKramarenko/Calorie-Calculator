@@ -1,12 +1,14 @@
 ﻿using CalorieCalculator.DTO;
 using CalorieCalculator.Extensions;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CalorieCalculator.POCO
 {
     public class Template
     {
+
         private readonly IEnumerable<ProductRecord> _records;
         private readonly CalculationSummary _calculationSummary;
 
@@ -21,17 +23,23 @@ namespace CalorieCalculator.POCO
         public string GetProductsDocumentContent() =>
              new StringBuilder()
                  .AppendLine()
-                 .ForEach(_records, (record) => $"{record.ProductName}: {record.ProductAmount}")
+                 .ForEach(NonZeroAmountRecords, (record) => $"{record.ProductName}: {record.ProductAmount}")
                  .Append(End)
                  .ToString();
 
-        public string End
+        private string End
         {
             get => $@" 
-                    Proteins:{_calculationSummary.ProteinsResult}g
+                    Proteins: {_calculationSummary.ProteinsResult}g
                     Fats: {_calculationSummary.FatResult}g
                     Сarbohydrates: {_calculationSummary.СarbohydratesResult}g 
                     Kcal: {_calculationSummary.Kcal}";
         }
+
+        private IEnumerable<ProductRecord> NonZeroAmountRecords
+        {
+            get => _records.Where(r => r.ProductAmount != 0);
+        }
+
     }
 }
