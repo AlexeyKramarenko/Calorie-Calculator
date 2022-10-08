@@ -7,8 +7,8 @@ namespace CalorieCalculator.POCO
     public class ResultDocument
     {
 
-        public readonly string _folderPath;
-        public readonly string _documentName;
+        private readonly string _folderPath;
+        private readonly string _documentName;
 
         public ResultDocument(string folderPath, string documentName)
         {
